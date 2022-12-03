@@ -1,0 +1,56 @@
+@import '../../../assets/styles/variables/_colors.scss';
+@import '../../../assets/styles/variables/_sizing.scss';
+
+.clients-card {
+    position: relative;
+    width: 255px;
+    height: 315px;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 93px 22px 29px;
+    box-shadow: 0px 15px 30px 12px rgba(38, 38, 38, 0.1);
+
+    &__text-block {
+        text-align: center;
+    }
+
+    &__img {
+        position: absolute;
+        top: -40px;
+        width: 111px;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+        color: $color-main;
+    }
+
+    &__title {
+        margin-bottom: 3px;
+        color: $color-light-grey;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__rate {
+        display: flex;
+        gap: 4px;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 3px;
+    }
+
+    &__line {
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        color: $color-light-grey;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

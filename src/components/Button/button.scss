@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables/_colors.scss';
+@import '../../assets/styles/variables/_sizing.scss';
+
+.button {
+    max-width: 114px;
+    max-height: 37px;
+    color: $color-main;
+    font-weight: 600;
+    font-size: 14px;
+    border: 0.6px solid $color-black;
+    padding: 7px 17px;
+}
+
+.button:hover {
+    color: $color-white;
+    background-color: $color-bg-black;
+}

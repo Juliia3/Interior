@@ -1,0 +1,23 @@
+.page-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+ body {
+    font-family: $main-font;
+    color: $color-main;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+

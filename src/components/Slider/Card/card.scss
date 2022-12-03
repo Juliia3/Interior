@@ -1,0 +1,28 @@
+@import '../../../assets/styles/variables/_colors.scss';
+@import '../../../assets/styles/variables/_sizing.scss';
+
+.card {
+    width: 350px;
+    height: 450px;
+    background-color: $color-bg-card;
+    padding: 50px 0 0 30px;
+    position: relative;
+
+    &__button {
+        position: absolute;
+        top: 145px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 190px;
+    }
+
+}

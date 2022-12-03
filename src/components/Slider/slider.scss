@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables/_colors.scss';
+@import '../../assets/styles/variables/_sizing.scss';
+
+.mySwiper {
+    width: 90%;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: $color-main;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    transform: scale(1.1);
+}
+
+.slider {
+    padding: 100px 0;
+
+    &__container {
+        display: flex;
+        justify-content: center; 
+        gap: 30px;
+    }
+    
+}

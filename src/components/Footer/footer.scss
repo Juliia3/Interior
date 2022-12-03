@@ -1,0 +1,75 @@
+@import '../../assets/styles/variables/_colors.scss';
+@import '../../assets/styles/variables/_sizing.scss';
+
+.footer {
+    position: relative;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__container {
+        text-align: center;
+        padding: 80px 0;
+        max-width: 420px;
+    }
+
+    &__logo {
+        z-index: 100;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 46px;
+        color: $color-main;
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        margin-bottom: 17px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: $color-bg-black;
+    }
+
+    &__form {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__input {
+        background-color: inherit;
+        width: 275px;
+        border: 0.8px solid #5A5A5A;
+        border-radius: 4px;
+        padding: 11px 13px 11px 13px;
+    }
+
+    &__button {
+        border: 0.8px solid #5A5A5A;
+        border-radius: 4px;
+        padding: 11px;
+        text-align: center;
+    }
+
+    &__button:hover {
+        transform: scale(1.1);
+    }
+
+    &__link {
+        padding: 60px 0 30px 165px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 20px;
+    }
+}

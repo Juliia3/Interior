@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables/_colors.scss';
+@import '../../assets/styles/variables/_sizing.scss';
+
+.top {
+    padding: 106px 0 118px 0;
+
+    &__title {
+        margin-bottom: 34px;
+    }
+
+    &__card-box {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+}

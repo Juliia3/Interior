@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables/_colors.scss';
+@import '../../assets/styles/variables/_sizing.scss';
+
+.info {
+
+    &__container {
+        padding: 53px 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-bg-black;
+    }
+
+    &__box {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        color: $color-white;
+        
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
