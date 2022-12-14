@@ -12,14 +12,12 @@ import LatestCards from "./LatestCards/LatestCards";
 import latest1 from "../../assets/images/latest1.jpg";
 import latest2 from "../../assets/images/latest2.jpg";
 import latest3 from "../../assets/images/latest3.jpg";
-import headLine from "../../assets/images/head-line.svg";
 
 function Latest() {
   return (
     <div className="latest">
       <div className="latest__header">
         <Heading text="RECENT ARTICLES" />{" "}
-        <img className="heading__line" src={headLine} />
       </div>
 
       <Subtitle text="Read Our Latest Articles" />
