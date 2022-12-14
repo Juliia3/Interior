@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables/_colors.scss';
+
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px;
+    
+    &__btn {
+        font-size: 30px;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+    &__btn:hover {
+        transform: scale(1.1);
+    }
+}

@@ -1,11 +1,13 @@
+import { useContext } from "react";
 import "./galleryCard.scss";
 import like from "../../../assets/images/like.svg";
 import bag from "../../../assets/images/bag.svg";
 import ReactStars from "react-rating-stars-component";
+import { ShoppingCardToggleContext } from "../../../contexts/ShoppingCardContext";
 
-function GalleryCard(props, button) {
+function GalleryCard(props) {
   const { name, img, price, crossed } = props;
-  const { count, onClick } = button;
+  const toggleItem = useContext(ShoppingCardToggleContext);
 
   return (
     <div className="gallery-card">
@@ -16,7 +18,7 @@ function GalleryCard(props, button) {
             <button>
               <img className="gallery-card__buy-icon" src={like} />
             </button>
-            <button onClick={() => onClick(count + 1)}>
+            <button onClick={() => toggleItem(props)}>
               <img className="gallery-card__buy-icon" src={bag} />
             </button>
           </div>

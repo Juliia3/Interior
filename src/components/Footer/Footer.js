@@ -11,7 +11,9 @@ function Footer() {
     <div className="footer">
       <img className="footer__bg" src={bg} />
       <div className="footer__container container">
-        <img src={logo} className="footer__logo" />
+        <a href="App.js">
+          <img src={logo} className="footer__logo" />
+        </a>
         <h3 className="footer__title">Join Now For Early Access</h3>
         <p className="footer__text">
           Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt

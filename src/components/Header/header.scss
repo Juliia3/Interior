@@ -1,5 +1,4 @@
 @import '../../assets/styles/variables/_colors.scss';
-@import '../../assets/styles/variables/_sizing.scss';
 
 .header {
     background-color: #D3CBC5;
@@ -29,6 +28,9 @@
 
     &__bag {
         margin: 0;
+    }
+    &__bag:hover {
+        transform: scale(1.1);
     }
 }
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import "./assets/styles/index.scss";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
@@ -9,24 +9,25 @@ import Latest from "./components/Latest/Latest";
 import Main from "./components/Main/Main";
 import Slider from "./components/Slider/Slider";
 import Top from "./components/Top/Top";
+import { ShoppingCardProvider } from "./contexts/ShoppingCardContext";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="page-wrapper">
-      <div className="App">
-        <Header />
-        <Main />
-        <Slider />
-        <Gallery count={count} onClick={setCount} />
-        <Clients />
-        <Top count={count} onClick={setCount} />
-        <Info />
-        <Latest />
-        <Footer />
+    <ShoppingCardProvider>
+      <div className="page-wrapper">
+        <div className="App">
+          <Header />
+          <Main />
+          <Slider />
+          <Gallery />
+          <Clients />
+          <Top />
+          <Info />
+          <Latest />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </ShoppingCardProvider>
   );
 }
 
